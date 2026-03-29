@@ -1,0 +1,21 @@
+﻿
+
+
+Component.Visible({"外墙X3", "外墙x:2" }) = False
+Component.Visible({"外墙X3", "外墙x:3"})= False
+Component.Visible({"外墙X4", "外墙x:2"})= False
+Component.Visible({"外墙X4", "外墙x:3" }) = False
+
+Component.Visible({"外墙X9", "外墙x:1"}) = False
+Component.Visible({"外墙X10", "外墙x:1"}) = False
+Component.Visible({"外墙Y28", "外墙y:2" }) = False
+Component.Visible({"外墙Y29", "外墙y:2" }) = False
+Component.Visible({"外墙Y30", "外墙y:2"}) = False
+Component.Visible({"外墙Y36", "外墙y:2" }) = False
+Component.Visible({"外墙Y37", "外墙y:2" }) = False
+Component.Visible({"外墙Y38", "外墙y:2" }) = False
+
+Component.Visible({"外墙X15", "外墙x:2" }) = False
+Component.Visible({"外墙X16", "外墙x:2" }) = False
+Component.Visible({"外墙X21", "外墙x:2" }) = False
+Component.Visible({"外墙X22", "外墙x:2" }) = False

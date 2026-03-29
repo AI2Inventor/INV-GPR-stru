@@ -1,0 +1,41 @@
+﻿connect,doors,windows,grid ....class;
+RHS_section.ipt
+richTextBox1.AppendText("已连接\n");
+iLogic_automation.RunExternalRule(currentname, externalrule)
+
+ PartDocument odoc = (PartDocument)invapp.ActiveDocument;
+ var oParams = odoc.ComponentDefinition.Parameters;
+ var oModelParams = oParams.ModelParameters;
+oModelParams["d0"].Name = "beam_length";
+ oModelParams["beam_length"].Value = x_distance - b;
+
+
+PartDocument odoc = (PartDocument)invapp.ActiveDocument;
+ var oParams = odoc.ComponentDefinition.Parameters;
+ var oUserParams = oParams.UserParameters;           
+ oUserParams["beam_length"].Value = x_distance - b;
+
+
+         public static IiProperties iiProperties;
+        public static IiLogicAutomation iiLogicAutomation;
+         iiLogicAutomation.RunRule(odoc1,"Rule_1");
+
+
+
+         Models_path + "柱" + "\\" + "组合柱.iam"
+
+
+                         for (i = 0; i <= m_5 - 1; i++)
+                {
+
+
+                        var opositionMatrix = invapp.TransientGeometry.CreateMatrix();
+                        var xMatrix_1 = invapp.TransientGeometry.CreateMatrix();
+
+                        xMatrix_1.SetTranslation(oTrans_x_internalwalls[i]);
+                        opositionMatrix.PreMultiplyBy(xMatrix_1);
+                    oInternalWalls[i] = assemDoc.ComponentDefinition.Occurrences.Add(Models_path + "内墙" + "\\" + "组合内墙.iam", opositionMatrix);
+                    oInternalWalls[i].Name = "内隔墙" + (i+ 1).ToString();
+                    oInternalWalls[i].Grounded = true;
+
+                }
